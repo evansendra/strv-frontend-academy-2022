@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ReactjS Crash Course</title>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+      const rootElement = document.getElementById('root')
+
+      const handleOnClick = () => console.log('Button clicked')
+
+      function InputElement(props) {
+        return (
+          <>
+            <label htmlFor={props.name}>{props.label}: </label>
+            <input placeholder={`Enter a ${props.name}`} id={props.name} type="text" name={props.name} />
+          </>
+        )
+      }
+
+      const handleOnSubmit = event => {
+        event.preventDefault();
+        const formData = new FormData(event.target)
+        const name = formData.get('name')
+        const surname = formData.get('surname')
+        console.log(`${name} ${surname}`)
+      }
+
+      const formElement = (
+        <form onSubmit={handleOnSubmit}>
+          <InputElement name="name" label="First Name" />
+          <br/>
+          <InputElement name="surname" label="Surname" />
+          <br/>
+          <br/>
+          <button className="button">Click me</button>
+        </form>
+      )
+
+      const root = ReactDOM.createRoot(rootElement)
+      root.render(formElement)
+    </script>
+  </body>
+</html>
