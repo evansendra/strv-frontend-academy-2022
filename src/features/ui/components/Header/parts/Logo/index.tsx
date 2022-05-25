@@ -1,3 +1,5 @@
 import Link from 'next/link'
 
-export const Logo = () => <Link href="/">E.</Link>
+import { Routes } from '~/features/core/constants/routes'
+
+export const Logo = () => <Link href={Routes.HOME}>E.</Link>

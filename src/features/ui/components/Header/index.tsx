@@ -1,9 +1,9 @@
 import { Logo } from './parts/Logo'
 import { SignIn } from './parts/SignIn'
 
-export const Header = () => (
+export const Header = ({ login = true }) => (
   <header>
     <Logo />
-    <SignIn />
+    {login && <SignIn />}
   </header>
 )
