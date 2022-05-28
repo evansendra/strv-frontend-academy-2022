@@ -12,5 +12,3 @@ export const Layout: FC<Props> = ({ children }) => (
     <main>{children}</main>
   </>
 )
-
-Layout.displayName = 'MyLayout'
