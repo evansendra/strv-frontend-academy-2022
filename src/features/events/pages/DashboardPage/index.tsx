@@ -2,8 +2,8 @@ import type { NextPage } from 'next'
 
 import { Layout } from '~/features/ui/components/Layout'
 
-export const CreateEventPage: NextPage = () => (
+export const DashboardPage: NextPage = () => (
   <Layout>
-    <h1>Welcome, Create Events</h1>
+    <h1>This is a Dashboard page!</h1>
   </Layout>
 )
