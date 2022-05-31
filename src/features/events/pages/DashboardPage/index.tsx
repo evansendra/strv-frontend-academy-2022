@@ -1,9 +1,17 @@
 import type { NextPage } from 'next'
 
-import { Layout } from '~/features/ui/components/Layout'
+import { LayoutPrivate } from '~/features/ui/components/LayoutPrivate'
+
+import { EventsList } from '../../components/EventsList'
+import { CreateButton } from '../../components/EventsList/parts/CreateButton'
 
 export const DashboardPage: NextPage = () => (
-  <Layout>
-    <h1>This is a Dashboard page!</h1>
-  </Layout>
+  <LayoutPrivate>
+    <h1>Dashboard</h1>
+    <section>
+      <h2>Events List</h2>
+      <EventsList />
+      <CreateButton />
+    </section>
+  </LayoutPrivate>
 )
