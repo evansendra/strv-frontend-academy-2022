@@ -19,6 +19,7 @@ export const HeadDefault: FC = () => (
     <meta name="theme-color" content="F9F9FB" />
     <meta property="og:title" content="Eventio" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="/share-banner.png" />
+    <meta property="og:url" content="https://www.absolute.url" />
+    <meta property="og:image" content="https://absolute.url/share-banner.png" />
   </Head>
 )
