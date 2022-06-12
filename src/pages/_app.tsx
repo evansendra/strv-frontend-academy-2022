@@ -1,9 +1,16 @@
 import type { AppProps } from 'next/app'
 
-import '~/features/ui/theme/global.css'
+import { HeadDefault } from '~/features/core/components/HeadDefault'
+import { GlobalStyle } from '~/features/ui/theme/global'
 
 function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+  return (
+    <>
+      <GlobalStyle />
+      <HeadDefault />
+      <Component {...pageProps} />
+    </>
+  )
 }
 
 export default MyApp
