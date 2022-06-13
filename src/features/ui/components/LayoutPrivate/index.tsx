@@ -1,5 +1,7 @@
 import type { ReactNode, FC } from 'react'
 
+import { PrivateGlobalStyle } from './styled'
+
 import { Header } from '../Header'
 
 type Props = {
@@ -8,7 +10,8 @@ type Props = {
 
 export const LayoutPrivate: FC<Props> = ({ children }) => (
   <>
-    <Header />
+    <PrivateGlobalStyle />
+    <Header isPublic={false} />
     <main>{children}</main>
   </>
 )

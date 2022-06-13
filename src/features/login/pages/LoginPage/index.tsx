@@ -4,6 +4,8 @@ import type { FormEvent } from 'react'
 import { Input } from '~/features/ui/components/Input'
 import { LayoutPublic } from '~/features/ui/components/LayoutPublic'
 
+import { Title } from './styled'
+
 export const LoginPage: NextPage = () => {
   const onSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault()
@@ -13,7 +15,7 @@ export const LoginPage: NextPage = () => {
 
   return (
     <LayoutPublic>
-      <h1>Sign in to Eventio.</h1>
+      <Title>Sign in to Eventio.</Title>
       <p>Enter your details below.</p>
       <form onSubmit={onSubmit}>
         <Input label="Email" type="email" name="email" />
