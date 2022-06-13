@@ -6,6 +6,7 @@ export const colors = {
     dim: palette.gray[500],
     light: palette.gray[800],
     inverse: palette.white,
+    formLabel: palette.gray[800],
   },
   background: {
     light: palette.white,
