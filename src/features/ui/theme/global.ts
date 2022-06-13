@@ -1,5 +1,7 @@
 import { createGlobalStyle } from 'styled-components'
 
+import { font } from './typography'
+
 export const GlobalStyle = createGlobalStyle`
 html,
 body, #__next {
@@ -13,9 +15,7 @@ html {
 }
 
 body {
-  font-size: 1.6rem;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font: 400 1.6rem ${font.base};
 }
 
 a {
