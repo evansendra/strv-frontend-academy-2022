@@ -23,6 +23,6 @@ a {
   text-decoration: none;
 }
 
-*, #::before, *::after {
+*, *::before, *::after {
   box-sizing: border-box;
 }`
