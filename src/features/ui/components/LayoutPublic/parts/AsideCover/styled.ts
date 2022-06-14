@@ -30,7 +30,7 @@ export const Quote = styled.q`
   line-height: 1.166;
 `
 export const FigCaption = styled.figcaption`
-  ${typography.paragraph.normal}
+  ${typography.paragraph.large}
 `
 
 export const Hr = styled.hr`

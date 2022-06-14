@@ -5,7 +5,10 @@ import { queries } from '~/features/ui/theme/queries'
 
 import { Logo } from './parts/Logo'
 
-export const StyledLogo = styled(Logo)``
+export const StyledLogo = styled(Logo)`
+  font-size: 2.8rem;
+  line-height: 1;
+`
 
 export const StyledHeader = styled.header<{ isAbsolute?: boolean }>`
   display: flex;
